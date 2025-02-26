@@ -1,0 +1,68 @@
+/*  RESET */
+*,
+*::before,
+*::after {
+  outline: 1px solid pink;
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+:root {
+  --background-white: #ffffff;
+  --background-darkgrey: #d8d8d8;
+  --background-lightgrey: #f3f5f4;
+  --text-darkgray: #4a4a4a;
+  --text-lightgray: #9a9a9a;
+}
+/* BODY */
+body {
+  min-width: 1024px;
+  font-size: 16px;
+}
+
+/* header */
+header {
+  color: var(--text-darkgray);
+  background-color: var(--background-white);
+  height: 64px;
+  margin: 0 24px;
+}
+
+.nav--container {
+  height: 32px;
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--logo {
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.nav--logo > img {
+  margin: 0;
+  padding: 0;
+}
+
+.logo-textdark,
+.logo-textlight {
+  font-size: 1rem;
+}
+
+.logo-textlight {
+  color: var(--text-lightgray);
+}
+
+.nav--list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.nav--list > li {
+  list-style-type: none;
+}
