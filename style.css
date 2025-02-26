@@ -127,7 +127,7 @@ header {
 .information {
   color: var(--text-darkgray);
   background-color: var(--background-lightgray);
-  padding: 32px 24px;
+  padding: 32px 24px 0 24px;
   display: grid;
   grid-template-columns: 60% 40%;
 }
@@ -158,6 +158,7 @@ header {
 .information--section {
   display: flex;
   flex-direction: column;
+  outline: 1px solid var(--background-mediumgray);
 }
 
 .info-box {
@@ -184,3 +185,43 @@ header {
 }
 
 /* MAIN: Section Course */
+.course {
+  color: var(--text-darkgray);
+  background-color: var(--background-mediumgray);
+}
+.course > h2 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.course-container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 4.5rem;
+  padding-bottom: 2rem;
+}
+
+.course-card {
+  background-color: var(--background-white);
+}
+
+.course-card > img {
+  width: 272px;
+  height: auto;
+  object-fit: cover;
+}
+
+.course-card > h3 {
+  margin: 1rem;
+}
+
+.course-card > p {
+  margin: 0.5rem 1rem 0 1rem;
+  font-size: 0.8rem;
+}
+
+.course-card > p:nth-last-child(1) {
+  padding-bottom: 1.5rem;
+}
