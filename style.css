@@ -2,7 +2,7 @@
 *,
 *::before,
 *::after {
-  /* outline: 1px solid pink; */
+  outline: 1px solid pink;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -340,6 +340,7 @@ footer {
   body {
     box-sizing: border-box;
     font-size: 16px;
+    align-content: center;
   }
   img,
   video {
@@ -388,6 +389,19 @@ footer {
     align-items: center;
     flex-wrap: wrap;
   }
+  .hero {
+    padding: 0;
+  }
+  .hero--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-container {
+    min-width: 600px;
+  }
+  .hero-content {
+    width: 100vw;
+  }
   .information--section {
     display: flex;
     flex-direction: column;
@@ -419,11 +433,15 @@ footer {
     width: auto;
     padding: 1rem 1rem 1.5rem 1rem;
   }
-  /* .thesis-container {
-    width: auto;
-  } */
+  .thesis-container {
+    min-width: 600px;
+    object-fit: cover;
+  }
   .thesis > h2 {
     width: 100%;
+  }
+  .thesis-content {
+    align-self: center;
   }
   .thesis-content > video {
     padding-bottom: 1.5rem;
