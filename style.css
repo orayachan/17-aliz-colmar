@@ -119,7 +119,7 @@ header {
   color: var(--text-white);
   background-color: var(--background-darkgray);
   font-size: 1rem;
-  padding: 8px 120px;
+  padding: 0.5rem 120px;
   border-style: none;
 }
 
@@ -127,7 +127,7 @@ header {
 .information {
   color: var(--text-darkgray);
   background-color: var(--background-lightgray);
-  padding: 32px 24px 0 24px;
+  padding: 2rem 1.5rem 0 1.5rem;
   display: grid;
   grid-template-columns: 60% 40%;
 }
@@ -158,14 +158,13 @@ header {
 .information--section {
   display: flex;
   flex-direction: column;
-  outline: 1px solid var(--background-mediumgray);
 }
 
 .info-box {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .info-box > img {
@@ -199,7 +198,7 @@ header {
   display: grid;
   grid-template: repeat(2, 1fr) / repeat(3, 1fr);
   gap: 2rem;
-  margin: 2rem 4.5rem;
+  margin: 2rem 4.5rem 0 4.5rem;
   padding-bottom: 2rem;
 }
 
@@ -225,3 +224,81 @@ header {
 .course-card > p:nth-last-child(1) {
   padding-bottom: 1.5rem;
 }
+
+/* MAIN: Section Thesis */
+.thesis {
+  color: var(--text-darkgray);
+  background-color: var(--background-lightgray);
+}
+.thesis > h2 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.thesis-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 1.5rem;
+  margin: 0 1.5rem;
+}
+
+.thesis-content > video {
+  width: 585px;
+  height: auto;
+  object-fit: cover;
+}
+
+.thesis-content > h3 {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.thesis-content > p {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.thesis-sidebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.fisma,
+.now-and-then {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fisma {
+  background-color: var(--background-mediumgray);
+}
+
+.now-and-then {
+  margin-right: 1.5rem;
+}
+
+.fisma > img,
+.now-and-then > img {
+  padding: 1rem;
+  width: 35%;
+}
+
+.fisma > h3,
+.now-and-then > h3 {
+  width: 65%;
+  margin: 0.5rem 0;
+}
+
+.fisma > p,
+.now-and-then > p {
+  width: 65%;
+}
+
+/* FOOTER */
