@@ -2,7 +2,7 @@
 *,
 *::before,
 *::after {
-  outline: 1px solid pink;
+  /* outline: 1px solid pink; */
   margin: 0;
   padding: 0;
   /* box-sizing: border-box; */
@@ -16,12 +16,14 @@
   --text-darkgray: #4a4a4a;
   --text-lightgray: #9a9a9a;
   --text-white: #ffffff;
+  --text-blue: #37b6ed;
 }
 /* BODY */
 body {
-  min-width: 1024px;
+  width: 1024px;
   font-family: "Arial", sans-serif;
   font-size: 16px;
+  margin: 0 auto;
 }
 
 /* header */
@@ -120,3 +122,65 @@ header {
   padding: 8px 120px;
   border-style: none;
 }
+
+/* MAIN: Section Information */
+.information {
+  color: var(--text-darkgray);
+  background-color: var(--background-lightgray);
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.information--container {
+  width: fit-content;
+  padding-right: 1.5rem;
+}
+
+.information--container > img {
+  width: 100%;
+}
+
+.information--container > h2 {
+  font-size: 2rem;
+  padding: 2rem 0 1.5rem 0;
+}
+
+.information--container > p {
+  font-size: 1rem;
+}
+
+.information--container > div {
+  font-size: 0.8rem;
+  padding-bottom: 2rem;
+}
+
+.information--section {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+}
+
+.info-box > img {
+  width: 35%;
+}
+
+.info-content > h3,
+.info-content > p {
+  padding: 0.5rem;
+}
+
+.guest {
+  background-color: var(--background-mediumgray);
+}
+.read-more {
+  color: var(--text-blue);
+}
+
+/* MAIN: Section Course */
