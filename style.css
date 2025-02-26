@@ -342,10 +342,6 @@ footer {
     font-size: 16px;
     align-content: center;
   }
-  img,
-  video {
-    max-width: fit-content;
-  }
   .nav--container,
   .nav--logo,
   .nav--list,
@@ -400,17 +396,26 @@ footer {
     min-width: 600px;
   }
   .hero-content {
-    width: 100vw;
+    display: grid;
+    grid-template-columns: 100%;
   }
   .information--section {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100%;
   }
   .info-box {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
+    flex: 1;
+  }
+  .info-content {
+    align-self: flex-start;
+  }
+  .mobile-image {
+    width: 100%;
+    object-fit: cover;
   }
   .guest {
     background-color: var(--background-lightgray);
