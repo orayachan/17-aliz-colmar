@@ -5,7 +5,7 @@
   /* outline: 1px solid pink; */
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 :root {
@@ -32,6 +32,7 @@ header {
   background-color: var(--background-white);
   height: 64px;
   margin: 0 24px;
+  align-content: center;
 }
 
 .nav--container {
@@ -298,7 +299,25 @@ header {
 
 .fisma > p,
 .now-and-then > p {
+  color: var(--text-lightgray);
   width: 65%;
 }
 
 /* FOOTER */
+footer {
+  color: var(--text-darkgray);
+  background-color: var(--background-lightgray);
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1rem 1.5rem 2rem 1.5rem;
+  border-top: 1px solid var(--background-mediumgray);
+}
+
+.term {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
