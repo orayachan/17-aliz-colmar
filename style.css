@@ -170,7 +170,8 @@ header {
   flex-direction: column;
 }
 
-.info-box {
+.info-box,
+.guest {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -191,6 +192,9 @@ header {
 }
 .read-more {
   color: var(--text-blue);
+}
+.mobile-image {
+  display: none;
 }
 
 /* MAIN: Section Course */
@@ -335,30 +339,42 @@ footer {
 @media screen and (max-width: 600px) {
   body {
     box-sizing: border-box;
-  }
-  img,
-  video {
-    max-width: fit-content;
+    font-size: 16px;
+    align-content: center;
   }
   .nav--container,
   .nav--logo,
   .nav--list,
   .information--container,
+  .desktop-image,
+  .course-card > img,
+  .course-card > p,
   .thesis-sidebox,
-  .thesis-content,
-  .side-content .fisma,
+  .thesis-content > h3,
+  .thesis-content > p,
+  .side-content,
+  .fisma,
   .now-and-then,
   .term {
     display: none;
   }
   .nav-container-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 64px;
+    width: 100%;
   }
   .nav-mobile {
+    width: 100vw;
+    height: 64px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+  }
+  .nav-mobile > li {
+    flex: 1;
+    list-style-type: none;
   }
   .hero,
   .course {
@@ -369,13 +385,73 @@ footer {
     align-items: center;
     flex-wrap: wrap;
   }
+  .hero {
+    padding: 0;
+  }
+  .hero--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .image-container {
+    min-width: 600px;
+  }
+  .hero-content {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .information--section {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex: 1;
+  }
+  .info-content {
+    align-self: flex-start;
+  }
+  .mobile-image {
+    width: 100%;
+    object-fit: cover;
+  }
   .guest {
+    background-color: var(--background-lightgray);
+  }
+  .course {
     background-color: var(--background-lightgray);
   }
   .course-container {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
   }
   .course-card {
+    background-color: var(--background-mediumgray);
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 1rem 1rem 1.5rem 1rem;
+  }
+  .thesis-container {
+    min-width: 600px;
+    object-fit: cover;
+  }
+  .thesis > h2 {
+    width: 100%;
+  }
+  .thesis-content {
+    align-self: center;
+  }
+  .thesis-content > video {
+    padding-bottom: 1.5rem;
+  }
+  footer {
+    padding: 1rem;
   }
 }
